@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <main className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-background px-6 py-16 text-center selection:bg-blue-600/20">
@@ -14,9 +16,11 @@ export default function Home() {
 
       <div className="relative z-10 flex max-w-2xl flex-col items-center gap-8">
         <div className="flex flex-col items-center gap-3">
-          <img
+          <Image
             src="/PT. SND-Ok.png"
             alt="PT Smart Nusa Digital"
+            width={160}
+            height={64}
             className="h-16 w-auto"
           />
           <span className="text-sm font-semibold tracking-widest uppercase text-foreground/60">
@@ -33,7 +37,7 @@ export default function Home() {
         </h1>
 
         <p className="max-w-md text-base leading-relaxed text-foreground/50">
-          We're crafting something new a better, smarter digital experience.
+          We&apos;re crafting something new a better, smarter digital experience.
           Stay tuned.
         </p>
 
